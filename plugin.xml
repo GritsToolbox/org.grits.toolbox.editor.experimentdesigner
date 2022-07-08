@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+   <extension
+         point="org.grits.toolbox.core.propertyreader">
+      <reader
+            class="org.grits.toolbox.editor.experimentdesigner.io.ExperimentPropertyReader"
+            propertyId="org.grits.toolbox.property.experiment">
+      </reader>
+   </extension>
+   <extension
+         id="org.grits.toolbox.editor.experimentdesigner.fragment"
+         point="org.eclipse.e4.workbench.model">
+      <fragment
+            uri="fragment.e4xmi">
+      </fragment>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="org.grits.toolbox.editor.experimentdesigner.editor.GraphEditor"
+            contributorClass="org.grits.toolbox.editor.experimentdesigner.editor.GraphEditorActionBarContributor"
+            icon="icons/experimentdesign.png"
+            id="org.grits.toolbox.editor.experimentdesigner.graphEditor"
+            name="Experiment Editor">
+      </editor>
+   </extension>
+   <extension
+         point="org.grits.toolbox.core.entryeditor">
+      <editor
+            class="org.grits.toolbox.editor.experimentdesigner.editor.GraphEditor"
+            editorId="org.grits.toolbox.editor.experimentdesigner.graphEditor"
+            name="ExperimentEditor"
+            propertyId="org.grits.toolbox.property.experiment">
+      </editor>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="org.grits.toolbox.editor.experimentdesigner.PerspectiveFactory"
+            icon="icons/experimentdesign.png"
+            id="org.grits.toolbox.editor.experimentdesigner.designPerspective1"
+            name="ExperimentDesign">
+      </perspective>
+   </extension>
+
+</plugin>

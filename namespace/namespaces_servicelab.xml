@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<namespaces version="1.0">
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_exchange_solvent">
+    <value>CD3OD||||D2O</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_nmr_solvent_name">
+    <value>CD3OD||||CDCl3||||D2O||||DMSO-d6||||pyridine-d5</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_nmr_reference_name">
+    <value>DSS||||TMS||||acetone</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_tube_manufacturer">
+    <value>Norell||||Shigemi||||Wilmad</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_nmr_manufacturer">
+    <value>Agilent||||Bruker</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_acetylation_mixture">
+    <value>1.1:1 Ac2O-TFA||||1:1 pyridine-Ac2O||||2:1:1 MeOH-pyridine-Ac2O</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_gc_column_manufacturer">
+    <value>Alltech||||Phenomenex||||Restek||||Supelco||||Waters</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_gc_column_model">
+    <value>DB-1||||EC-1||||Equity-1||||SP-2330</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_gc-ms_instrument_manufacturer">
+    <value>Agilent||||Shimadzu||||Waters</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_mwco">
+    <value>1||||10||||100||||4||||6-8</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_acid_name">
+    <value>HCl||||TFA||||acetic acid||||dioxane/2M HCl (9:1)||||formic acid</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_drying">
+    <value>air||||lyophilization||||nitrogen||||speed vac</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_hpaec_column_model">
+    <value>PA1||||PA100||||PA20</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_hplc_manufacturer">
+    <value>Agilent||||Thermo||||Waters</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_hplc_model">
+    <value>1200||||1260||||Dionex ICS-3000</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_eluent_id">
+    <value>NaOH||||sodium acetate/100 mM NaOH</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_reductant_name">
+    <value>LiBD4||||LiBH4||||NaBD4||||NaBH4</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_list%3A_%7Bnabd4%7D_%7Bnabh4%7D_%7Blibd4%7D_%7Blibh4%7D">
+    <value>LiBD4||||LiBH4||||NaBD4||||NaBH4</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_type_of_protease">
+    <value>Glu-C||||chymotrypsin||||pepsin||||trypsin</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_mobile_phase_a">
+    <value>acetonitrile||||methanol</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_additive">
+    <value>NH4OH||||NaOH||||TFA||||formic acid</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_lc-ms_column">
+    <value>C18||||C8||||HILIC||||Hypercarb</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_ms2_fragmentation_type">
+    <value>CID||||ETD||||HCD</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_protease_name">
+    <value>Glu-C||||chymotrypsin||||pepsin||||trypsin</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_wash_buffer_name">
+    <value>acetic acid||||formic acid||||water</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_elute_buffer_name">
+    <value>acetic acid||||formic acid||||water</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_n-glycanase_name">
+    <value>PNGase A||||PNGase F||||endo-H</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_buffer_name">
+    <value>2%SDS||||TRIS||||ammonium acetate||||ammonium bicarbonate||||ammonium formate||||lithium nitrate||||sodium phosphate in 18O-water||||sodium sulfate||||water</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_extractant_name">
+    <value>chloroform||||dichloromethane||||diethyl ether||||ethyl acetate</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_matrix_name">
+    <value>3-AQ/CHCA||||CHCA||||DHB||||DHB/DMA||||THAP||||sinapinic acid</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_maldi_instrument">
+    <value>AB Sciex 5800||||Bruker Microflex||||Bruker Ultraflex</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_maldi_mode">
+    <value>linear negative ion||||lionear positive ion||||refelctor negative ion||||reflector positive ion</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_membrane_type">
+    <value>YM</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_sec_column_manufacturer">
+    <value>Agilent||||Bio-Rad||||GE||||TOSOH</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_sec_column_model">
+    <value>PL aquagel-OH 60||||Superdex 75||||Superdex Peptide||||Superose 12||||Superose 6||||TSK-Gel G2000SWXL||||TSK-Gel3000SWXL</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_hplc_instrument_manufacturer">
+    <value>Agilent||||Shimadzu||||Waters</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_detector_type">
+    <value>ELSD||||FLD||||Post-column derivatization and FLD||||RI||||UV</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_base_name">
+    <value>KOH||||LiOH||||Na2CO3||||NaOH</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_eluent_a_name">
+    <value>NaCl||||NaOCl||||acetonitrile||||methanol||||water/methanol/acetic acid (89:10:1)</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_eluent_b_name">
+    <value>10% acetic acid||||NaCl||||NaOCl||||water/methanol/acetic acid (90:9:1)</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_hplc_column_manufacturer">
+    <value>Agilent||||Phenomenex||||Thermo||||Waters</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_hplc_column_model">
+    <value>Hypersil||||Microsorb||||Phenosphere||||Spherisorb||||Zorbax</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_lyase_name">
+    <value>bacterial hyaluronidase||||chondroitinase ABC||||heparinases I, II, and III||||keratanase</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_sax_column_manufacturer">
+    <value>Agilent||||Phenomenex||||Thermo||||Waters</value>
+  </namespace>
+  <namespace uri="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace_service_lab_sax_column_model">
+    <value>Hypersil||||Phenosphere||||Spherisorb||||Zorbax</value>
+  </namespace>
+</namespaces>
+

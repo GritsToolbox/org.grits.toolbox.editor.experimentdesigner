@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_fv2j0G-ZEeal6eJj0S7olg">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_sUrZgG-dEeal6eJj0S7olg" featurename="commands" parentElementId="org.grits.toolbox.core.application">
+    <elements xsi:type="commands:Command" xmi:id="_61nTYG-dEeal6eJj0S7olg" elementId="projectexplorer.command.newexperiment" commandName="New Experiment" description="Create a new experiment"/>
+    <elements xsi:type="commands:Command" xmi:id="_lgW-MHErEeal6eJj0S7olg" elementId="projectexplorer.command.viewExperimentDesign" commandName="Experiment Design" description="View Experiment Design"/>
+    <elements xsi:type="commands:Command" xmi:id="_dsMKYHFDEeal6eJj0S7olg" elementId="org.grits.toolbox.editor.experimentdesigner.Report" commandName="Generate Report"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_ICinsG-eEeal6eJj0S7olg" featurename="handlers" parentElementId="org.grits.toolbox.core.trimmedwindow.main">
+    <elements xsi:type="commands:Handler" xmi:id="_MeTBUG-eEeal6eJj0S7olg" elementId="org.grits.toolbox.editor.experimentdesigner.handler.newexperiment" contributionURI="bundleclass://org.grits.toolbox.editor.experimentdesigner/org.grits.toolbox.editor.experimentdesigner.handler.NewExperimentHandler" command="_61nTYG-dEeal6eJj0S7olg"/>
+    <elements xsi:type="commands:Handler" xmi:id="_jjgP8HErEeal6eJj0S7olg" elementId="org.grits.toolbox.editor.experimentdesigner.handler.viewExperiment" contributionURI="bundleclass://org.grits.toolbox.editor.experimentdesigner/org.grits.toolbox.editor.experimentdesigner.handler.ViewExperimentDesignHandler" command="_lgW-MHErEeal6eJj0S7olg"/>
+    <elements xsi:type="commands:Handler" xmi:id="_gnuucHFDEeal6eJj0S7olg" elementId="org.grits.toolbox.editor.experimentdesigner.handler2" contributionURI="bundleclass://org.grits.toolbox.editor.experimentdesigner/org.grits.toolbox.editor.experimentdesigner.handler.ExperimentDesignReportHandler" command="_dsMKYHFDEeal6eJj0S7olg"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_1OE_sHUaEeal6eJj0S7olg" featurename="bindingContexts" parentElementId="org.grits.toolbox.core.application">
+    <elements xsi:type="commands:BindingContext" xmi:id="_9pS4gHUaEeal6eJj0S7olg" elementId="org.grits.toolbox.core.bindingcontext.entry" name="Entry" description="It is a context used for identifying entry context in grits"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_a_xVQHbGEeal6eJj0S7olg" featurename="addons" parentElementId="org.grits.toolbox.core.application">
+    <elements xsi:type="application:Addon" xmi:id="_iwbOIHbGEeal6eJj0S7olg" elementId="org.grits.toolbox.editor.experimentdesigner.addon.0" contributionURI="bundleclass://org.grits.toolbox.editor.experimentdesigner/org.grits.toolbox.editor.experimentdesigner.ExperimentDesignerAddon"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_sVtU4Ht9Eeal6eJj0S7olg" featurename="children" parentElementId="org.grits.toolbox.core.menu.main.grits.new">
+    <elements xsi:type="menu:HandledMenuItem" xmi:id="_x8Z3oHt9Eeal6eJj0S7olg" elementId="org.grits.toolbox.editor.experimentdesigner.handledmenuitem.experimentdesign" label="Experiment Design" iconURI="platform:/plugin/org.grits.toolbox.editor.experimentdesigner/icons/experimentdesign.png" tooltip="create experiment design" command="_61nTYG-dEeal6eJj0S7olg"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_-hrWEHt9Eeal6eJj0S7olg" featurename="children" parentElementId="org.grits.toolbox.core.menu.projectexplorer.popup.submenu.new">
+    <elements xsi:type="menu:HandledMenuItem" xmi:id="__fTb8Ht9Eeal6eJj0S7olg" elementId="org.grits.toolbox.editor.experimentdesigner.handledmenuitem.experimentdesign" label="Experiment Design" iconURI="platform:/plugin/org.grits.toolbox.editor.experimentdesigner/icons/experimentdesign.png" tooltip="create a new experiment design" command="_61nTYG-dEeal6eJj0S7olg"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_cKBT8Ht-Eeal6eJj0S7olg" featurename="children" parentElementId="org.grits.toolbox.core.menu.projectexplorer.popup.submenu.view">
+    <elements xsi:type="menu:HandledMenuItem" xmi:id="_drP2IHt-Eeal6eJj0S7olg" elementId="org.grits.toolbox.editor.experimentdesigner.handledmenuitem.experimentdesign" label="Experiment Design" iconURI="platform:/plugin/org.grits.toolbox.editor.experimentdesigner/icons/experimentdesign.png" tooltip="view an experiment design" command="_lgW-MHErEeal6eJj0S7olg"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_MG4CYH6dEeal6eJj0S7olg" featurename="children" parentElementId="org.grits.toolbox.core.partstack.protocolview">
+    <elements xsi:type="basic:Part" xmi:id="_EGbmsHqPEeal6eJj0S7olg" elementId="org.grits.toolbox.editor.experimentdesigner.part.protocolview" contributionURI="bundleclass://org.grits.toolbox.editor.experimentdesigner/org.grits.toolbox.editor.experimentdesigner.views.ProtocolView" label="ProtocolView" iconURI="platform:/plugin/org.grits.toolbox.editor.experimentdesigner/icons/protocoldetails.png">
+      <toolbar xmi:id="_lCj-oHqREeal6eJj0S7olg" elementId="org.grits.toolbox.editor.experimentdesigner.toolbar.2">
+        <children xsi:type="menu:DirectToolItem" xmi:id="_mKZJYHqREeal6eJj0S7olg" elementId="org.grits.toolbox.editor.experimentdesigner.directtoolitem.savethisprotocolasavariant" label="Save this protocol as a variant" iconURI="platform:/plugin/org.grits.toolbox.editor.experimentdesigner/icons/save-16.png" tooltip="Save this protocol as a variant" enabled="false" contributionURI="bundleclass://org.grits.toolbox.editor.experimentdesigner/org.grits.toolbox.editor.experimentdesigner.actions.SaveProtocolVariantAction"/>
+        <children xsi:type="menu:DirectToolItem" xmi:id="_zBIyUHqREeal6eJj0S7olg" elementId="org.grits.toolbox.editor.experimentdesigner.directtoolitem.savethisprotocolasanewtemplate" label="Save this protocol as a new template" iconURI="platform:/plugin/org.grits.toolbox.editor.experimentdesigner/icons/k-floppy-icon.png" tooltip="Save this protocol as a new template" enabled="false" contributionURI="bundleclass://org.grits.toolbox.editor.experimentdesigner/org.grits.toolbox.editor.experimentdesigner.actions.SaveProtocolTemplateAction"/>
+      </toolbar>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_mnn9MH6dEeal6eJj0S7olg" featurename="children" parentElementId="org.grits.toolbox.core.partstack.paperview">
+    <elements xsi:type="basic:Part" xmi:id="_cbMXwHtjEeal6eJj0S7olg" elementId="org.grits.toolbox.editor.experimentdesigner.part.paperview" contributionURI="bundleclass://org.grits.toolbox.editor.experimentdesigner/org.grits.toolbox.editor.experimentdesigner.views.PaperView" label="Paper View" iconURI="platform:/plugin/org.grits.toolbox.editor.experimentdesigner/icons/papers.png">
+      <toolbar xmi:id="_nV2HcHtjEeal6eJj0S7olg" elementId="org.grits.toolbox.editor.experimentdesigner.toolbar.4">
+        <children xsi:type="menu:DirectToolItem" xmi:id="_oa2AoHtjEeal6eJj0S7olg" elementId="org.grits.toolbox.editor.experimentdesigner.directtoolitem.addpaper" label="Add Paper" iconURI="platform:/plugin/org.grits.toolbox.editor.experimentdesigner/icons/circle-add-icon.png" tooltip="Add a paper reference" contributionURI="bundleclass://org.grits.toolbox.editor.experimentdesigner/org.grits.toolbox.editor.experimentdesigner.actions.AddPaperAction"/>
+        <children xsi:type="menu:DirectToolItem" xmi:id="_xAzw4HtjEeal6eJj0S7olg" elementId="org.grits.toolbox.editor.experimentdesigner.directtoolitem.deletepaper" label="Delete Paper" iconURI="platform:/plugin/org.grits.toolbox.editor.experimentdesigner/icons/red-cross-icon.png" tooltip="Delete the selected paper" enabled="false" contributionURI="bundleclass://org.grits.toolbox.editor.experimentdesigner/org.grits.toolbox.editor.experimentdesigner.actions.DeletePaperAction"/>
+      </toolbar>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_qyQKkH6dEeal6eJj0S7olg" featurename="children" parentElementId="org.grits.toolbox.core.partstack.parameterview">
+    <elements xsi:type="basic:Part" xmi:id="_l-JKIHtiEeal6eJj0S7olg" elementId="org.grits.toolbox.editor.experimentdesigner.part.parameterview" contributionURI="bundleclass://org.grits.toolbox.editor.experimentdesigner/org.grits.toolbox.editor.experimentdesigner.views.ParameterView" label="Parameter View" iconURI="platform:/plugin/org.grits.toolbox.editor.experimentdesigner/icons/parameters.png" tooltip="">
+      <toolbar xmi:id="_tK7g8HtiEeal6eJj0S7olg" elementId="org.grits.toolbox.editor.experimentdesigner.toolbar.3">
+        <children xsi:type="menu:DirectToolItem" xmi:id="_u_kuYHtiEeal6eJj0S7olg" elementId="org.grits.toolbox.editor.experimentdesigner.directtoolitem.deleteparameter" label="Delete Parameter" iconURI="platform:/plugin/org.grits.toolbox.editor.experimentdesigner/icons/red-cross-icon.png" tooltip="Delete the selected parameter" enabled="false" contributionURI="bundleclass://org.grits.toolbox.editor.experimentdesigner/org.grits.toolbox.editor.experimentdesigner.actions.DeleteParameterAction"/>
+        <children xsi:type="menu:DirectToolItem" xmi:id="_3ivCQHtiEeal6eJj0S7olg" elementId="org.grits.toolbox.editor.experimentdesigner.directtoolitem.addparameter" label="Add Parameter" iconURI="platform:/plugin/org.grits.toolbox.editor.experimentdesigner/icons/circle-add-icon.png" tooltip="Add a parameter" contributionURI="bundleclass://org.grits.toolbox.editor.experimentdesigner/org.grits.toolbox.editor.experimentdesigner.actions.AddParameterAction"/>
+        <children xsi:type="menu:DirectToolItem" xmi:id="_HGDmMHtjEeal6eJj0S7olg" elementId="org.grits.toolbox.editor.experimentdesigner.directtoolitem.addparametergroup" label="Add Parameter Group" iconURI="platform:/plugin/org.grits.toolbox.editor.experimentdesigner/icons/chart-add-icon.png" tooltip="Add a parameter group" contributionURI="bundleclass://org.grits.toolbox.editor.experimentdesigner/org.grits.toolbox.editor.experimentdesigner.actions.AddParameterGroupAction"/>
+      </toolbar>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_1v_oYIA7Eeal6eJj0S7olg" featurename="children" parentElementId="org.grits.toolbox.core.menu.main.plugins" positionInList="">
+    <elements xsi:type="menu:Menu" xmi:id="_TVH_QJerEeaQyJVS-36HMg" elementId="org.grits.toolbox.editor.experimentdesigner.menu.experimentdesigner" label="Experiment Designer">
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_FVjA8IA8Eeal6eJj0S7olg" elementId="org.grits.toolbox.editor.experimentdesigner.handledmenuitem.report" label="Generate Report" iconURI="platform:/plugin/org.grits.toolbox.editor.experimentdesigner/icons/report-icon.png" tooltip="Generate a report (Word or PDF) " command="_dsMKYHFDEeal6eJj0S7olg"/>
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_9K640PNhEeq13cl4zvv4Iw" elementId="org.grits.toolbox.editor.experimentdesigner.handledmenuitem.experimentdesign" label="Experiment Design" iconURI="platform:/plugin/org.grits.toolbox.editor.experimentdesigner/icons/experimentdesign.png" tooltip="View Saved Experiment Design" command="_lgW-MHErEeal6eJj0S7olg"/>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_9cCwECFHEee93_TNp1fXXA" featurename="children" parentElementId="org.grits.toolbox.core.toolbar.main">
+    <elements xsi:type="menu:HandledToolItem" xmi:id="_At47UCFIEee93_TNp1fXXA" elementId="org.grits.toolbox.editor.experimentdesigner.handledtoolitem.newexperimentdesign" label="New Experiment Design" iconURI="platform:/plugin/org.grits.toolbox.editor.experimentdesigner/icons/experimentdesign.png" tooltip="Create a new Experiment Design for an analyte" command="_61nTYG-dEeal6eJj0S7olg"/>
+  </fragments>
+</fragment:ModelFragments>

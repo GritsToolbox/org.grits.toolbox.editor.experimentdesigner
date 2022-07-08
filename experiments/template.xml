@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<experimentTemplates>
+  <template id="1" name="w/o pre-complex" creationTime="2018-11-26T11:58:39.557+0000" filename="experimentTemplate53095.xml">
+    <description>Antibody - N/A&#xD;
+Biodetector - N/A</description>
+  </template>
+  <template id="2" name="w/ pre-complex" creationTime="2018-11-26T12:05:16.160+0000" filename="experimentTemplate15088.xml">
+    <description />
+  </template>
+  <template id="5" name="w/o pre-complex (Ab)" creationTime="2019-02-01T11:43:33.867+0000" filename="experimentTemplate86652.xml">
+    <description />
+  </template>
+  <template id="7" name="w/o pre-complex (Ab+BioDetect)" creationTime="2019-02-01T12:12:22.943+0000" filename="experimentTemplate56504.xml">
+    <description />
+  </template>
+</experimentTemplates>
+

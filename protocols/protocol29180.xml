@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<protocol creator="" template="Image analysis" label="Image analysis Default">
+    <description>Adjustment of the grid (GPS file) and generation of data as a GPR file using scanner software to have the fluorescent signals quantified</description>
+    <location>
+        <x>0</x>
+        <y>0</y>
+    </location>
+    <color blue="204" green="255" red="153"/>
+    <size>
+        <width>50</width>
+        <height>50</height>
+    </size>
+    <category description="Scanning the microarray slide to record and analyse fluorescent microarray image" name="Scanning" position="6" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#Scanning">
+        <color blue="204" green="255" red="153"/>
+        <icon>153-255-204.gif</icon>
+    </category>
+    <parameter description="Name of the manufacturer.&#10;" name="Manufacturer" position="1" shortNamespace="false" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#manufacturer">
+        <availableUnits/>
+        <guidelineURIs>MIRAGE Glycan Microarrays</guidelineURIs>
+        <namespace>http://www.grits-toolbox.org/ontology/experimentdesigner#string</namespace>
+    </parameter>
+    <parameter description="Name" name="Name" position="2" shortNamespace="false" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#parameter_name">
+        <availableUnits/>
+        <groupId>1</groupId>
+        <guidelineURIs>MIRAGE Glycan Microarrays</guidelineURIs>
+        <namespace>http://www.grits-toolbox.org/ontology/experimentdesigner#string</namespace>
+    </parameter>
+    <parameter description="Version of the software used to analyse the scanner image" name="Version" position="3" required="false" shortNamespace="false" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#parameter_version">
+        <availableUnits/>
+        <guidelineURIs>MIRAGE Glycan Microarrays</guidelineURIs>
+        <namespace>http://www.grits-toolbox.org/ontology/experimentdesigner#string</namespace>
+    </parameter>
+    <parameter description="Provide any additional features active in the software, e.g. data smoothing and normalization" name="Data treatment" position="4" required="false" shortNamespace="false" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#parameter_data_treatment">
+        <availableUnits/>
+        <namespace>http://www.grits-toolbox.org/ontology/experimentdesigner#string</namespace>
+    </parameter>
+    <templateChanged>false</templateChanged>
+    <templateUri>http://www.grits-toolbox.org/ontology/experimentdesigner#image_analysis_pokettur</templateUri>
+</protocol>

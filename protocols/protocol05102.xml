@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<protocol creator="" template="Scanning" label="Scanning Default">
+    <description>Using microarray scanner to record fluorescent microarray image</description>
+    <location>
+        <x>0</x>
+        <y>0</y>
+    </location>
+    <color blue="204" green="255" red="153"/>
+    <size>
+        <width>50</width>
+        <height>50</height>
+    </size>
+    <category description="Scanning the microarray slide to record and analyse fluorescent microarray image" name="Scanning" position="6" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#Scanning">
+        <color blue="204" green="255" red="153"/>
+        <icon>153-255-204.gif</icon>
+    </category>
+    <parameter-group description="Hardware used to scan the slides" id="0" label="Scanning hardware" position="1" required="false" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#parameter_group_scanning_hardware">
+        <guidelineURIs>MIRAGE Glycan Microarrays</guidelineURIs>
+        <parameter description="Name of microarray scanner&#10;&#10;e.g. GenePIx, ProScan Array or InnoScan" name="Name of scanner" position="1" shortNamespace="false" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#parameter_name_of_scanner" value="GenePix">
+            <availableUnits/>
+            <groupId>0</groupId>
+            <guidelineURIs>MIRAGE Glycan Microarrays</guidelineURIs>
+            <namespace>http://www.grits-toolbox.org/ontology/experimentdesigner#string</namespace>
+        </parameter>
+        <parameter description="Name of the manufacturer.&#10;" name="Manufacturer" position="2" shortNamespace="false" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#manufacturer">
+            <availableUnits/>
+            <groupId>0</groupId>
+            <guidelineURIs>MIRAGE Glycan Microarrays</guidelineURIs>
+            <namespace>http://www.grits-toolbox.org/ontology/experimentdesigner#string</namespace>
+        </parameter>
+        <parameter description="Model of the hardware" name="Model" position="3" shortNamespace="false" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#parameter_model">
+            <availableUnits/>
+            <groupId>0</groupId>
+            <guidelineURIs>MIRAGE Glycan Microarrays</guidelineURIs>
+            <namespace>http://www.grits-toolbox.org/ontology/experimentdesigner#string</namespace>
+        </parameter>
+        <parameter description="Principle of detection&#10;&#10;e.g. fluorescence or colorimetric" name="Scanning method" position="4" shortNamespace="false" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#parameter_scanning_method" value="Fluorescence">
+            <availableUnits/>
+            <groupId>0</groupId>
+            <guidelineURIs>MIRAGE Glycan Microarrays</guidelineURIs>
+            <namespace>http://www.grits-toolbox.org/ontology/experimentdesigner#string</namespace>
+        </parameter>
+    </parameter-group>
+    <parameter-group description="Parameters (PMT gain and scan power) used to scan the slides" id="1" label="Scanner settings" position="2" required="false" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#parameter_group_scanner_settings">
+        <guidelineURIs>MIRAGE Glycan Microarrays</guidelineURIs>
+        <parameter description="Resolution of the slide image" name="Resolution" position="1" shortNamespace="false" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#parameter_resolution" value="10.0">
+            <availableUnits>
+                <availableUnits>
+                    <label>um/pixel</label>
+                    <uri>http://www.grits-toolbox.org/ontology/experimentdesigner#unit_um__pixel</uri>
+                </availableUnits>
+            </availableUnits>
+            <groupId>1</groupId>
+            <guidelineURIs>MIRAGE Glycan Microarrays</guidelineURIs>
+            <namespace>http://www.grits-toolbox.org/ontology/experimentdesigner#double</namespace>
+            <unit>
+                <label>um/pixel</label>
+                <uri>http://www.grits-toolbox.org/ontology/experimentdesigner#unit_um__pixel</uri>
+            </unit>
+        </parameter>
+        <parameter description="Laser colour of the channel" name="Laser channel" position="2" shortNamespace="false" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#parameter_laser_channel" value="red">
+            <availableUnits/>
+            <groupId>1</groupId>
+            <guidelineURIs>MIRAGE Glycan Microarrays</guidelineURIs>
+            <namespace>http://www.grits-toolbox.org/ontology/experimentdesigner#string</namespace>
+        </parameter>
+        <parameter description="Wavelength at which the scan is done" name="Wavelength" position="3" shortNamespace="false" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#parameter_wavelength" value="635.0">
+            <availableUnits>
+                <availableUnits>
+                    <label>nm</label>
+                    <uri>http://www.grits-toolbox.org/ontology/experimentdesigner#unit_nm</uri>
+                </availableUnits>
+            </availableUnits>
+            <groupId>1</groupId>
+            <guidelineURIs>MIRAGE Glycan Microarrays</guidelineURIs>
+            <namespace>http://www.grits-toolbox.org/ontology/experimentdesigner#double</namespace>
+            <unit>
+                <label>nm</label>
+                <uri>http://www.grits-toolbox.org/ontology/experimentdesigner#unit_nm</uri>
+            </unit>
+        </parameter>
+        <parameter description="PMT gain used  during scanning process" name="PMT gain" position="4" shortNamespace="false" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#parameter_pmt_gain" value="350.0">
+            <availableUnits/>
+            <groupId>1</groupId>
+            <guidelineURIs>MIRAGE Glycan Microarrays</guidelineURIs>
+            <namespace>http://www.grits-toolbox.org/ontology/experimentdesigner#double</namespace>
+        </parameter>
+        <parameter description="Scan power used during scanning process" name="Scan power" position="5" shortNamespace="false" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#parameter_scan_power" value="50.0">
+            <availableUnits>
+                <availableUnits>
+                    <label>%</label>
+                    <uri>http://www.grits-toolbox.org/ontology/experimentdesigner#unit_percent</uri>
+                </availableUnits>
+            </availableUnits>
+            <groupId>1</groupId>
+            <guidelineURIs>MIRAGE Glycan Microarrays</guidelineURIs>
+            <namespace>http://www.grits-toolbox.org/ontology/experimentdesigner#double</namespace>
+            <unit>
+                <label>%</label>
+                <uri>http://www.grits-toolbox.org/ontology/experimentdesigner#unit_percent</uri>
+            </unit>
+        </parameter>
+    </parameter-group>
+    <templateChanged>false</templateChanged>
+    <templateUri>http://www.grits-toolbox.org/ontology/experimentdesigner#scanning_ealycmpm</templateUri>
+</protocol>

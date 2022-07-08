@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<protocols>
+  <protocol id="1" name="Wetting &amp; Blocking Default" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#wetting_&amp;_blocking_vdstpqya" filename="protocol66055.xml" category="http://www.grits-toolbox.org/ontology/experimentdesigner#Sample_overlay" />
+  <protocol id="2" name="Overlay Default" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#overlay_xyedxyxa" filename="protocol73349.xml" category="http://www.grits-toolbox.org/ontology/experimentdesigner#Sample_overlay" />
+  <protocol id="3" name="Fixation Default" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#fixation_jvkpxjjr" filename="protocol33735.xml" category="http://www.grits-toolbox.org/ontology/experimentdesigner#Fixation" />
+  <protocol id="4" name="Washing Default" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#washing_uachfkqp" filename="protocol37964.xml" category="http://www.grits-toolbox.org/ontology/experimentdesigner#Washing" />
+  <protocol id="5" name="Detection reagent Default" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#detection_reagent_hpxlcdtx" filename="protocol95803.xml" category="http://www.grits-toolbox.org/ontology/experimentdesigner#Detection_reagent" />
+  <protocol id="6" name="Pre-complexation Default" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#pre-complexation_vanxtpzs" filename="protocol99036.xml" category="http://www.grits-toolbox.org/ontology/experimentdesigner#Detection_reagent" />
+  <protocol id="7" name="Fluorescent reagent Default" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#fluorescent_reagent_kzrrampa" filename="protocol03645.xml" category="http://www.grits-toolbox.org/ontology/experimentdesigner#Detection_reagent" />
+  <protocol id="8" name="Drying Default" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#drying_pagnixsw" filename="protocol58627.xml" category="http://www.grits-toolbox.org/ontology/experimentdesigner#Drying" />
+  <protocol id="9" name="Scanning Default" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#scanning_ealycmpm" filename="protocol05102.xml" category="http://www.grits-toolbox.org/ontology/experimentdesigner#Scanning" />
+  <protocol id="10" name="Image analysis Default" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#image_analysis_pokettur" filename="protocol29180.xml" category="http://www.grits-toolbox.org/ontology/experimentdesigner#Scanning" />
+</protocols>
+

@@ -1,0 +1,434 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY terms "http://purl.org/dc/terms/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.grits-toolbox.org/ontology/experimentdesigner#"
+     xml:base="http://www.grits-toolbox.org/ontology/experimentdesigner"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner">
+        <owl:versionInfo rdf:datatype="&xsd;string">2.2</owl:versionInfo>
+        <oboInOwl:hasVersion>2.2</oboInOwl:hasVersion>
+    </owl:Ontology>
+    
+
+
+   <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created">
+        <rdfs:domain rdf:resource="http://www.grits-toolbox.org/ontology/experimentdesigner#Protocol"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator">
+        <rdfs:domain rdf:resource="http://www.grits-toolbox.org/ontology/experimentdesigner#Protocol"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title">
+        <rdfs:domain rdf:resource="http://www.grits-toolbox.org/ontology/experimentdesigner#PaperReference"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.grits-toolbox.org/ontology/experimentdesigner#belongs_to_group -->
+
+    <owl:ObjectProperty rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#belongs_to_group">
+        <owl:inverseOf rdf:resource="http://www.grits-toolbox.org/ontology/experimentdesigner#contains_parameter"/>
+        <rdfs:domain rdf:resource="http://www.grits-toolbox.org/ontology/experimentdesigner#ParameterInParameterGroupContext"/>
+        <rdfs:range rdf:resource="http://www.grits-toolbox.org/ontology/experimentdesigner#ParameterGroup"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.grits-toolbox.org/ontology/experimentdesigner#contains_parameter -->
+
+    <owl:ObjectProperty rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#contains_parameter">
+        <rdfs:domain rdf:resource="http://www.grits-toolbox.org/ontology/experimentdesigner#ParameterGroup"/>
+        <rdfs:range rdf:resource="http://www.grits-toolbox.org/ontology/experimentdesigner#ParameterInParameterGroupContext"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.grits-toolbox.org/ontology/experimentdesigner#has_category -->
+
+    <owl:ObjectProperty rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#has_category">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.grits-toolbox.org/ontology/experimentdesigner#Protocol"/>
+        <rdfs:range rdf:resource="http://www.grits-toolbox.org/ontology/experimentdesigner#Category"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.grits-toolbox.org/ontology/experimentdesigner#has_namespace -->
+
+    <owl:ObjectProperty rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#has_namespace">
+        <rdfs:domain rdf:resource="http://www.grits-toolbox.org/ontology/experimentdesigner#Parameter"/>
+        <rdfs:range rdf:resource="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace"/>
+        <rdfs:comment>Parameters have namespaces or datatype references</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.grits-toolbox.org/ontology/experimentdesigner#has_parameter -->
+
+    <owl:ObjectProperty rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#has_parameter">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.grits-toolbox.org/ontology/experimentdesigner#Protocol"/>
+        <rdfs:range rdf:resource="http://www.grits-toolbox.org/ontology/experimentdesigner#ParameterContext"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.grits-toolbox.org/ontology/experimentdesigner#has_parameter_group -->
+
+    <owl:ObjectProperty rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#has_parameter_group">
+        <rdfs:domain rdf:resource="http://www.grits-toolbox.org/ontology/experimentdesigner#Protocol"/>
+        <rdfs:range rdf:resource="http://www.grits-toolbox.org/ontology/experimentdesigner#ParameterGroupContext"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.grits-toolbox.org/ontology/experimentdesigner#has_reference -->
+
+    <owl:ObjectProperty rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#has_reference">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.grits-toolbox.org/ontology/experimentdesigner#Protocol"/>
+        <rdfs:range rdf:resource="http://www.grits-toolbox.org/ontology/experimentdesigner#PaperReference"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.grits-toolbox.org/ontology/experimentdesigner#has_subCategory -->
+
+    <owl:ObjectProperty rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#has_subCategory">
+        <rdfs:domain rdf:resource="http://www.grits-toolbox.org/ontology/experimentdesigner#PaletteCategory"/>
+        <rdfs:range rdf:resource="http://www.grits-toolbox.org/ontology/experimentdesigner#Category"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.grits-toolbox.org/ontology/experimentdesigner#has_unit_of_measurement -->
+
+    <owl:ObjectProperty rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#has_unit_of_measurement">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.grits-toolbox.org/ontology/experimentdesigner#Parameter"/>
+        <rdfs:range rdf:resource="http://www.grits-toolbox.org/ontology/experimentdesigner#Unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.grits-toolbox.org/ontology/experimentdesigner#parameter -->
+
+    <owl:ObjectProperty rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#parameter">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.grits-toolbox.org/ontology/experimentdesigner#ParameterContext"/>
+        <rdfs:range rdf:resource="http://www.grits-toolbox.org/ontology/experimentdesigner#Parameter"/>
+        <rdfs:label>parameter</rdfs:label>
+    </owl:ObjectProperty>
+    
+    <!-- http://www.grits-toolbox.org/ontology/experimentdesigner#subparameter -->
+
+    <owl:ObjectProperty rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#subparameter">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.grits-toolbox.org/ontology/experimentdesigner#ParameterInParameterGroupContext"/>
+        <rdfs:range rdf:resource="http://www.grits-toolbox.org/ontology/experimentdesigner#Parameter"/>
+        <rdfs:label>subparameter</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.grits-toolbox.org/ontology/experimentdesigner#parameter_group -->
+
+    <owl:ObjectProperty rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#parameter_group">
+        <rdfs:domain rdf:resource="http://www.grits-toolbox.org/ontology/experimentdesigner#ParameterGroupContext"/>
+        <rdfs:range rdf:resource="http://www.grits-toolbox.org/ontology/experimentdesigner#ParameterGroup"/>
+    </owl:ObjectProperty>
+    
+    <owl:ObjectProperty rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#guideline_info">
+        <rdfs:domain>
+        	<owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+	        		<rdf:Description rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#ParameterInParameterGroupContext"/>
+	        		<rdf:Description rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#ParameterContext"/>
+	       			<rdf:Description rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#ParameterGroupContext"/>
+	     		</owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>   
+        <rdfs:range rdf:resource="http://www.grits-toolbox.org/ontology/experimentdesigner#StandardGuideline"/>
+    </owl:ObjectProperty>
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.grits-toolbox.org/ontology/experimentdesigner#has_file -->
+
+    <owl:DatatypeProperty rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#has_file">
+        <rdfs:domain rdf:resource="http://www.grits-toolbox.org/ontology/experimentdesigner#Protocol"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>name of the associated file</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.grits-toolbox.org/ontology/experimentdesigner#has_icon -->
+
+    <owl:DatatypeProperty rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#has_icon">
+        <rdfs:domain rdf:resource="http://www.grits-toolbox.org/ontology/experimentdesigner#Category"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.grits-toolbox.org/ontology/experimentdesigner#has_namespace_file -->
+
+    <owl:DatatypeProperty rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#has_namespace_file">
+        <rdfs:domain rdf:resource="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.grits-toolbox.org/ontology/experimentdesigner#has_position -->
+
+    <owl:DatatypeProperty rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#has_position">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+        	<owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+	        		<rdf:Description rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#Category"/>
+	        		<rdf:Description rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#ParameterInParameterGroupContext"/>
+	        		<rdf:Description rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#ParameterContext"/>
+	       			<rdf:Description rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#ParameterGroupContext"/>
+	     		</owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>   
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+
+    <!-- http://www.grits-toolbox.org/ontology/experimentdesigner#has_pubmed_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#has_pubmed_id">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.grits-toolbox.org/ontology/experimentdesigner#PaperReference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.grits-toolbox.org/ontology/experimentdesigner#has_url -->
+
+    <owl:DatatypeProperty rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#has_url">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#PaperReference"/>
+                    <rdf:Description rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#Protocol"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:label>has_url</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.grits-toolbox.org/ontology/experimentdesigner#is_required -->
+
+    <owl:DatatypeProperty rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#is_required">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#ParameterContext"/>
+                    <rdf:Description rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#ParameterGroupContext"/>
+                    <rdf:Description rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#ParameterInParameterGroupContext"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label>is_required</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.grits-toolbox.org/ontology/experimentdesigner#is_short_namespace -->
+
+    <owl:DatatypeProperty rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#is_short_namespace">
+        <rdfs:domain rdf:resource="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.grits-toolbox.org/ontology/experimentdesigner#Category -->
+
+    <owl:Class rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#Category">
+        <rdfs:comment>Categorization of protocols</rdfs:comment>
+        <rdfs:label>Category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.grits-toolbox.org/ontology/experimentdesigner#PaletteCategory -->
+
+    <owl:Class rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#PaletteCategory"/>
+    
+
+
+    <!-- http://www.grits-toolbox.org/ontology/experimentdesigner#PaperReference -->
+
+    <owl:Class rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#PaperReference">
+        <rdfs:label>Paper Reference</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.grits-toolbox.org/ontology/experimentdesigner#Parameter -->
+
+    <owl:Class rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#Parameter">
+        <rdfs:label>Parameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.grits-toolbox.org/ontology/experimentdesigner#ParameterContext -->
+
+    <owl:Class rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#ParameterContext">
+        <rdfs:comment>This is a placeholder class to model the n-ary relationship &quot;a protocol has a parameter with the required value of true&quot;</rdfs:comment>
+        <rdfs:label>Parameter Context</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.grits-toolbox.org/ontology/experimentdesigner#ParameterGroup -->
+
+    <owl:Class rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#ParameterGroup">
+        <rdfs:comment>Parameter group is a grouping of parameters that belong to a protocol</rdfs:comment>
+        <rdfs:label>Parameter Group</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.grits-toolbox.org/ontology/experimentdesigner#ParameterGroupContext -->
+
+    <owl:Class rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#ParameterGroupContext">
+        <rdfs:label>Parameter Group Context</rdfs:label>
+    </owl:Class>
+    
+    <!-- http://www.grits-toolbox.org/ontology/experimentdesigner#ParameterInParameterGroupContext -->
+
+    <owl:Class rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#ParameterInParameterGroupContext">
+    <rdfs:comment>This is a placeholder class to model the n-ary relationship &quot;a parameter group has a parameter with the required value of true&quot;</rdfs:comment>
+        <rdfs:label>Parameter In a Group Context</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.grits-toolbox.org/ontology/experimentdesigner#Protocol -->
+
+    <owl:Class rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#Protocol">
+        <rdfs:label>Protocol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.grits-toolbox.org/ontology/experimentdesigner#Unit -->
+
+    <owl:Class rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#Unit">
+        <rdfs:label>Unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.grits-toolbox.org/ontology/experimentdesigner#namespace -->
+
+    <owl:Class rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#namespace">
+        <rdfs:comment>It is used to describe the namespace for Parameter values</rdfs:comment>
+        <rdfs:label>Namespace</rdfs:label>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://www.grits-toolbox.org/ontology/experimentdesigner#StandardGuideline">
+		<rdfs:comment>Name of the guideline that requires the given parameter or parameter group</rdfs:comment>
+        <rdfs:label>Standard Guideline</rdfs:label>
+    </owl:Class>
+    
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

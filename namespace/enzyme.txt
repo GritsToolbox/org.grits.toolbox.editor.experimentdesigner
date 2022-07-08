@@ -1,0 +1,7 @@
+Tyrpsin	Trypsin
+Tripsin	Trypsin
+Chymotrypsin	Chymotrypsin
+Chymotripsin	Chymotrypsin
+PNGase-F	PNGase-F
+pngase f	PNGase-F
+PNGase-A	PNGase-A

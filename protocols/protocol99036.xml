@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<protocol creator="" template="Pre-complexation" label="Pre-complexation Default">
+    <description>Complexation of Sample with detection reagent(s) before the overlay step</description>
+    <location>
+        <x>0</x>
+        <y>0</y>
+    </location>
+    <color blue="255" green="213" red="255"/>
+    <size>
+        <width>50</width>
+        <height>50</height>
+    </size>
+    <category description="Incubation step (with or without pre-complexation)" name="Detection reagent" position="4" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#Detection_reagent">
+        <color blue="255" green="213" red="255"/>
+        <icon>255-213-255.gif</icon>
+    </category>
+    <parameter-group description="First detection reagent" id="0" label="Detection Reagent 1" position="1" required="false" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#parameter_group_detection_reagent_1">
+        <guidelineURIs>MIRAGE Glycan Microarrays</guidelineURIs>
+        <parameter description="Name" name="Name" position="1" shortNamespace="false" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#parameter_name">
+            <availableUnits/>
+            <groupId>0</groupId>
+            <guidelineURIs>MIRAGE Glycan Microarrays</guidelineURIs>
+            <namespace>http://www.grits-toolbox.org/ontology/experimentdesigner#string</namespace>
+        </parameter>
+        <parameter description="Source of the reagent" name="Source" position="2" shortNamespace="false" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#parameter_source">
+            <availableUnits/>
+            <groupId>0</groupId>
+            <guidelineURIs>MIRAGE Glycan Microarrays</guidelineURIs>
+            <namespace>http://www.grits-toolbox.org/ontology/experimentdesigner#string</namespace>
+        </parameter>
+        <parameter description="Catalogue Number and LOT number if known" name="Batch" position="3" shortNamespace="false" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#parameter_batch">
+            <availableUnits/>
+            <groupId>0</groupId>
+            <namespace>http://www.grits-toolbox.org/ontology/experimentdesigner#string</namespace>
+        </parameter>
+        <parameter description="Concentration (or dilution) of the reagent used&#10;&#10;e.g. 1 ug/ml or 1:1000 dilution" name="Concentration/dilution" position="4" required="false" shortNamespace="false" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#parameter_concentration__dilution">
+            <availableUnits/>
+            <groupId>0</groupId>
+            <guidelineURIs>MIRAGE Glycan Microarrays</guidelineURIs>
+            <namespace>http://www.grits-toolbox.org/ontology/experimentdesigner#string</namespace>
+        </parameter>
+    </parameter-group>
+    <parameter-group description="Second detection reagent" id="1" label="Detection Reagent 2" position="2" required="false" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#parameter_group_detection_reagent_2">
+        <parameter description="Name" name="Name" position="1" shortNamespace="false" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#parameter_name">
+            <availableUnits/>
+            <groupId>1</groupId>
+            <guidelineURIs>MIRAGE Glycan Microarrays</guidelineURIs>
+            <namespace>http://www.grits-toolbox.org/ontology/experimentdesigner#string</namespace>
+        </parameter>
+        <parameter description="Source of the reagent" name="Source" position="2" shortNamespace="false" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#parameter_source">
+            <availableUnits/>
+            <groupId>1</groupId>
+            <guidelineURIs>MIRAGE Glycan Microarrays</guidelineURIs>
+            <namespace>http://www.grits-toolbox.org/ontology/experimentdesigner#string</namespace>
+        </parameter>
+        <parameter description="Catalogue Number and LOT number if known" name="Batch" position="3" shortNamespace="false" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#parameter_batch">
+            <availableUnits/>
+            <groupId>1</groupId>
+            <namespace>http://www.grits-toolbox.org/ontology/experimentdesigner#string</namespace>
+        </parameter>
+        <parameter description="Concentration (or dilution) of the reagent used&#10;&#10;e.g. 1 ug/ml or 1:1000 dilution" name="Concentration/dilution" position="4" required="false" shortNamespace="false" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#parameter_concentration__dilution">
+            <availableUnits/>
+            <groupId>1</groupId>
+            <guidelineURIs>MIRAGE Glycan Microarrays</guidelineURIs>
+            <namespace>http://www.grits-toolbox.org/ontology/experimentdesigner#string</namespace>
+        </parameter>
+    </parameter-group>
+    <parameter description="Ratio and steps of pre-complexation.&#10;Also time and temperature for each step&#10;&#10;e.g. the protein was pre-complexed with detection&#10;reagent1 and detection reagent 2 in a ratio of 4:2:1&#10;(by weight for 15 min at ambient temperature)" name="Pre-complexation method" position="3" required="false" shortNamespace="false" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#parameter_pre-complexation_method">
+        <availableUnits/>
+        <guidelineURIs>MIRAGE Glycan Microarrays</guidelineURIs>
+        <namespace>http://www.grits-toolbox.org/ontology/experimentdesigner#string</namespace>
+    </parameter>
+    <parameter description="Composition of solution used for dilution&#10;&#10;e.g. 1% (w/v) BSA in Hepes buffered saline&#10;(5 mM Hepes, pH 7.4, 150 mM NaCl, 5 mM CaCl2)" name="Diluent composition" position="4" required="false" shortNamespace="false" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#parameter_diluent_composition">
+        <availableUnits/>
+        <guidelineURIs>MIRAGE Glycan Microarrays</guidelineURIs>
+        <namespace>http://www.grits-toolbox.org/ontology/experimentdesigner#string</namespace>
+    </parameter>
+    <templateChanged>false</templateChanged>
+    <templateUri>http://www.grits-toolbox.org/ontology/experimentdesigner#pre-complexation_vanxtpzs</templateUri>
+</protocol>

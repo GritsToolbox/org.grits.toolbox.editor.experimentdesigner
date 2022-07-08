@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<protocol creator="" template="Fixation" label="Fixation Default">
+    <description>Fixation step after sample overlay</description>
+    <location>
+        <x>0</x>
+        <y>0</y>
+    </location>
+    <color blue="204" green="255" red="255"/>
+    <size>
+        <width>50</width>
+        <height>50</height>
+    </size>
+    <category description="Fixation step after sample overlay" name="Fixation" position="2" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#Fixation">
+        <color blue="204" green="255" red="255"/>
+        <icon>255-255-204.gif</icon>
+    </category>
+    <parameter description="Name" name="Name" position="1" shortNamespace="false" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#parameter_name">
+        <availableUnits/>
+        <groupId>1</groupId>
+        <guidelineURIs>MIRAGE Glycan Microarrays</guidelineURIs>
+        <namespace>http://www.grits-toolbox.org/ontology/experimentdesigner#string</namespace>
+    </parameter>
+    <parameter description="Volume of solution added to each array or subarray" name="Volume in the array" position="2" shortNamespace="false" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#parameter_volume_in_the_array" value="100.0">
+        <availableUnits>
+            <availableUnits>
+                <label>ul/subarray</label>
+                <uri>http://www.grits-toolbox.org/ontology/experimentdesigner#unit_ul__subarray</uri>
+            </availableUnits>
+            <availableUnits>
+                <label>ml/slide</label>
+                <uri>http://www.grits-toolbox.org/ontology/experimentdesigner#unit_ml__slide</uri>
+            </availableUnits>
+            <availableUnits>
+                <label> ul/well</label>
+                <uri>http://www.grits-toolbox.org/ontology/experimentdesigner#unit__ul__well</uri>
+            </availableUnits>
+            <availableUnits>
+                <label>ml/well</label>
+                <uri>http://www.grits-toolbox.org/ontology/experimentdesigner#unit_ml__well</uri>
+            </availableUnits>
+        </availableUnits>
+        <groupId>1</groupId>
+        <namespace>http://www.grits-toolbox.org/ontology/experimentdesigner#double</namespace>
+        <unit>
+            <label>ul/subarray</label>
+            <uri>http://www.grits-toolbox.org/ontology/experimentdesigner#unit_ul__subarray</uri>
+        </unit>
+    </parameter>
+    <parameter description="The duration of the reaction." name="Time" position="3" shortNamespace="false" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#time">
+        <availableUnits>
+            <availableUnits>
+                <label>hour</label>
+                <uri>http://www.grits-toolbox.org/ontology/experimentdesigner#unit_hour</uri>
+            </availableUnits>
+            <availableUnits>
+                <label>minute</label>
+                <uri>http://www.grits-toolbox.org/ontology/experimentdesigner#unit_minute</uri>
+            </availableUnits>
+            <availableUnits>
+                <label>sec</label>
+                <uri>http://www.grits-toolbox.org/ontology/experimentdesigner#unit_sec</uri>
+            </availableUnits>
+            <availableUnits>
+                <label>day</label>
+                <uri>http://www.grits-toolbox.org/ontology/experimentdesigner#unit_day</uri>
+            </availableUnits>
+        </availableUnits>
+        <guidelineURIs>MIRAGE Glycan Microarrays</guidelineURIs>
+        <namespace>http://www.grits-toolbox.org/ontology/experimentdesigner#double</namespace>
+    </parameter>
+    <parameter description="The tempereature of the reaction." name="Temperature" position="4" shortNamespace="false" uri="http://www.grits-toolbox.org/ontology/experimentdesigner#temperature">
+        <availableUnits>
+            <availableUnits>
+                <label>celsius</label>
+                <uri>http://www.grits-toolbox.org/ontology/experimentdesigner#unit_celcius</uri>
+            </availableUnits>
+            <availableUnits>
+                <label>Celsius</label>
+                <uri>http://www.grits-toolbox.org/ontology/experimentdesigner#unit_Celsius</uri>
+            </availableUnits>
+        </availableUnits>
+        <guidelineURIs>MIRAGE Glycan Microarrays</guidelineURIs>
+        <namespace>http://www.grits-toolbox.org/ontology/experimentdesigner#double</namespace>
+        <unit>
+            <label>Celsius</label>
+            <uri>http://www.grits-toolbox.org/ontology/experimentdesigner#unit_Celsius</uri>
+        </unit>
+    </parameter>
+    <templateChanged>false</templateChanged>
+    <templateUri>http://www.grits-toolbox.org/ontology/experimentdesigner#fixation_jvkpxjjr</templateUri>
+</protocol>
