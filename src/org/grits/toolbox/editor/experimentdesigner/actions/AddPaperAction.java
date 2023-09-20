@@ -11,7 +11,7 @@ import org.apache.log4j.Logger;
 import org.eclipse.core.databinding.Binding;
 import org.eclipse.core.databinding.DataBindingContext;
 import org.eclipse.core.databinding.UpdateValueStrategy;
-import org.eclipse.core.databinding.beans.PojoProperties;
+import org.eclipse.core.databinding.beans.typed.PojoProperties;
 import org.eclipse.core.databinding.validation.IValidator;
 import org.eclipse.core.databinding.validation.ValidationStatus;
 import org.eclipse.core.runtime.IStatus;
@@ -22,7 +22,7 @@ import org.eclipse.e4.core.services.events.IEventBroker;
 import org.eclipse.e4.ui.model.application.MApplication;
 import org.eclipse.e4.ui.model.application.ui.basic.MPart;
 import org.eclipse.e4.ui.services.IServiceConstants;
-import org.eclipse.jface.databinding.swt.SWTObservables;
+import org.eclipse.jface.databinding.swt.typed.WidgetProperties;
 import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.jface.fieldassist.ControlDecoration;
 import org.eclipse.jface.resource.JFaceResources;
@@ -237,7 +237,7 @@ public class AddPaperAction  {
 			pmIdText = pubmedId.getText();
 			DataBindingContext dataBindingContext = new DataBindingContext();
 			Binding binding = dataBindingContext.bindValue(
-				    SWTObservables.observeText(pubmedId, SWT.Modify),
+					WidgetProperties.text(SWT.Modify).observe(pubmedId),
 				    PojoProperties.value(PubMedFormDialog.class, "pmIdText").observe(this),
 				    new UpdateValueStrategy()
 				        .setAfterConvertValidator(new IntegerFieldValidator(
